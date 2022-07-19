@@ -1,0 +1,40 @@
+addBorder(image, thickness){
+    for (var px of image.values()){
+        if (px.getX() < thickness){
+            px = setBlack(px);
+        }
+        if (px.getX() > image.getWidth()-thickness){
+            px = setBlack(px);
+        }
+        if (px.getY() < thickness){
+            px = setBlack(px);
+        }
+        if (px.getY() > image.getHeight()-thickness){
+            px = setBlack(px);
+        }
+    }
+    return image;
+}
+
+
+veya
+
+function addBorder(image, thickness){
+  for (var px of image.values()){
+    var x = px.getX();
+    var y = px.getY();
+    if (x < thickness){
+      px = setBlack(px);
+    }
+    if (x >= image.getWidth()-thickness){
+      px = setBlack(px);
+    }
+    if (y < thickness){
+      px = setBlack(px);
+    }
+    if (y >= image.getHeight()-thickness){
+      px = setBlack(px);
+    }
+  }
+  return image;
+}

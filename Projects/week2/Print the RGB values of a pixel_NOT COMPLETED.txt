@@ -1,0 +1,17 @@
+// write your code here
+function printPixel(nameImage, xpos, ypos) {
+    var someImg = new SimpleImage(nameImage);
+    var pix1 = someImg.getPixel(xpos, ypos);
+    var red = pix1.getRed();
+    var green = pix1.getGreen();
+    var blue = pix1.getBlue();
+    var ans =red+green+blue;
+    return ans;
+
+}
+
+printPixel("drewgreen.png",10, 10);
+printPixel("drewgreen.png",250, 500);
+
+
+

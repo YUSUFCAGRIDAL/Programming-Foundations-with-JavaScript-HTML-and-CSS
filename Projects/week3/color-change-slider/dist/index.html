@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Color Change&amp;Slider</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1> toward canvas </h1>
+
+<canvas id="d1">
+</canvas>
+
+<p>
+  <input type="button"
+         value="make lime"
+         onclick="dolime()">
+  
+    <input type="button"
+         value="make yellow"
+         onclick="doyellow()">
+  <input type="color"
+         value="#001A57"
+         id="clr"
+         onchange="docolor()">
+    <input type="range"
+         max="100"
+           min="10"
+           value="10"
+           id="sldr"
+         oninput="dosquare()">
+  
+  
+         
+         </p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

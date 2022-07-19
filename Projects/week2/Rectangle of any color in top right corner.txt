@@ -1,0 +1,17 @@
+function topRightCorner(cornerWidth, cornerHeight, someImage, red, green, blue) {
+    var width = someImage.getWidth();
+    for (var pixel of someImage.values()) {
+        if (pixel.getY()<cornerHeight) {
+            if(pixel.getX()>width-cornerWidth){
+                pixel.setRed(red);
+                pixel.setGreen(green);
+                pixel.setBlue(blue);
+            }
+        }
+    }
+    return someImage;
+}
+
+var picture = new SimpleImage("chapel.png");
+var result = topRightCorner(30, 60, picture, 255, 255, 0);
+print(result);

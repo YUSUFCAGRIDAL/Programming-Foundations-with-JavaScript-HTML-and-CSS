@@ -1,0 +1,18 @@
+var goruntu =new SimpleImage ("drewRobert.png");
+var arkaplan =new SimpleImage ("dinos.png");
+var output = new SimpleImage (goruntu.getWidth(), goruntu.getHeight());
+
+for (var pixel of goruntu.values()) {
+    if (pixel.getGreen() > pixel.getRed() + pixel.getBlue()) {
+        var x = pixel.getX();
+        var y = pixel.getY();
+        var arkaplanpixel = arkaplan.getPixel(x, y);
+        output.setPixel(x, y, arkaplanpixel);
+    
+    }
+    else {
+        output.setPixel(pixel.getX(), pixel.getY(), pixel);
+    }
+}
+
+print(output);

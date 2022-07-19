@@ -1,0 +1,11 @@
+// write your code here
+function perimeter(imageName) {
+    var someImg = new SimpleImage(imageName);
+    var a = someImg.getWidth();
+    var b = someImg.getHeight();
+    var ans = a + a + b + b;
+    return ans;
+}
+
+print(perimeter("rodger.png"));
+

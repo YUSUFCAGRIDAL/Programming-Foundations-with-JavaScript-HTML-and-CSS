@@ -1,0 +1,20 @@
+function square(x){
+	var ans = x*x;
+	return ans;
+}
+var y = square(4);
+print(y);
+
+function toplama(x){
+    var ans = x+x+x;
+    return ans;
+}
+var sonuc =toplama(2);
+print(sonuc);
+
+var image = new SimpleImage("Amcalar.jpg");
+print (image.getWidth ());
+print (image.getHeight ());
+print (image.getPixel (0,0));
+print (image.getRed (0,0));
+print (image);
