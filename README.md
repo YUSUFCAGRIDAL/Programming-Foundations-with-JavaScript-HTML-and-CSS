@@ -5,10 +5,11 @@ This is the first course of the Specialization, <a href="https://www.coursera.or
 
 <hr>
 
-# YUSUF CAGRI DAL' note
+# YUSUF CAGRI DAL's note
  Here's <a href="https://www.coursera.org/account/accomplishments/verify/ANS5QTSFXGCE">the link to the Certificate.</a>
 
 <h3>What I learned in this course:</h3>
+
 1. Think critically about how to solve a problem using programming;
 
 2. Write JavaScript programs using functions, for loops, and conditional statements;
